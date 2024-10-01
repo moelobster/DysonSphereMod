@@ -10,7 +10,9 @@
   "icon": "assets/dyson_sphere/icon.png",
   "environment": "*",
   "entrypoints": {
-    "client": [
+    "fabric-datagen": [
+      "moe.seafood.dyson_sphere.data.Dyson_sphereDatagen"
+    ],"client": [
       "moe.seafood.dyson_sphere.client.Dyson_sphereClient"
     ],
     "main": [
@@ -21,8 +23,8 @@
     "dyson_sphere.mixins.json"
   ],
   "depends": {
-    "fabricloader": ">=${loader_version}",
+    "fabricloader": ">=0.16.5",
     "fabric": "*",
-    "minecraft": "${minecraft_version}"
+    "minecraft": "1.20.1"
   }
 }
